@@ -1,0 +1,53 @@
+ART:
+hahmot
+ammukset
+platformit
+tausta
+----------------------------------
+-pelaajat
+	-liikkumisanimaatio?????(NICE TO HAVE)
+-platformit
+	-voi olla useita erilaisia
+-tausta
+-ammus
+-muscleflash (NICE TO HAVE)
+
+
+8-Bit-(water)Style
+----------------------------------
+HAHMOT:
+----------------------------------
+liikkuminen: 
+	-vasemmalle ja oikealle add force-metodilla.
+
+hyppy: 
+	-add-force y-akselilla.
+-----------------------------------
+ampuminen: 
+	-trajectoryn lähettäminen tasaisella nopeudella. 
+	-tapahtuu x-ajan viiveellä. 
+	-infinite ammo
+	-panos tuhoutuu x-matkan päästä
+	-ampuminen tapahtuu x-akselilla
+	-panokset tuhoutuu, kun ne osuu kappaleisiin
+	-ampumisen origin point on liikuteltavissa
+
+------
+winning/losing state:
+	-kun toinen pelaaja kuolee, molemmat pelaajat resetoituu takaisin omalle aloituspisteelle
+		-kun panos osuu toisen pelaajan collideriin -> scene resets
+
+-----------------------------------
+PLATFORM:
+	-tehdään laatikoita joihin tulee colliderit
+	-täysin solideja
+	
+------------------------------------
+	-(tuhoutuva objekti)??? NICE TO HAVE BUT NOT NECESSARY
+------------------------------------
+2-pelaaja ohjaukset:
+	-keyboard ja (playstation controller support NICE TO HAPPEN)
+------------------------------------
+PISTEYTYS SYSTEEMI: (NICE TO HAVE)
+	-kun pelaaja kuolee 
+	
