@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     Rigidbody2D rb;
 
     [SerializeField] float RunForce = 0f;
-    [SerializeField] float JumpForce = 0f;
+    [SerializeField] Vector2 JumpForce;
     bool IsGrounded;
 
     
@@ -37,22 +37,22 @@ public class Movement : MonoBehaviour
 
     void JumpProcess()
     {
-        if (Input.GetKey(KeyCode.W) && IsGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && IsGrounded)
         {
-            rb.AddForce(Vector2.up * JumpForce * Time.deltaTime);
+            rb.AddForce(JumpForce, ForceMode2D.Impulse);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision) 
     {
-        if (collision.gameObject.CompareTag("Ground"));
+        if (collision.gameObject.CompareTag("Ground"))
         {
             IsGrounded = true;
         }
     }
     void OnCollisionExit2D(Collision2D collision) 
     {
-        if (collision.gameObject.CompareTag("Ground"));
+        if (collision.gameObject.CompareTag("Ground"))
         {
             IsGrounded = false;
         }
