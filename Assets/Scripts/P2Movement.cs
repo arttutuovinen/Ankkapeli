@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class P2Movement : MonoBehaviour
 {
+
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
 
@@ -28,11 +28,11 @@ public class Movement : MonoBehaviour
 
     void RunProcess()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(Vector2.right * RunForce * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(Vector2.left * RunForce * Time.deltaTime);
         }
@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
 
     void JumpProcess()
     {
-        if (Input.GetKeyDown(KeyCode.W) && IsGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded)
         {
             rb.AddForce(JumpForce, ForceMode2D.Impulse);
         }
@@ -62,14 +62,14 @@ public class Movement : MonoBehaviour
     } 
     void Flip()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             if(spriteRenderer != null)
             {
                 spriteRenderer.flipX = true;
             }
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             spriteRenderer.flipX = false;
         }
