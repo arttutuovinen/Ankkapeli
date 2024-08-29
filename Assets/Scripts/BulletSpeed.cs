@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BulletSpeed : MonoBehaviour
 {
-
-    
     public Rigidbody2D rb;
     public float destructionDelay = 2f; // Delay in seconds before the object is destroyed
     public float bulletSpeed = 50f;
