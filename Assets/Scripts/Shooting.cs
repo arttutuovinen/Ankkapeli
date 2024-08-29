@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform shootingPoint;
     public GameObject bulletPrefab;
+   
     //Shooting Cooldown
     public float shootCooldown = 1f; // Cooldown time in seconds between shots
     private float lastShootTime = 0f; // Time when the last shot was fired
@@ -24,7 +25,7 @@ public class Shooting : MonoBehaviour
     }
     void Shoot()
     {
-        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+       Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
     }
 
    

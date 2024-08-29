@@ -176,9 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85620587b8807f34282cf16741d1c847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
   rb: {fileID: 5699990661815898540}
-  destructionDelay: 0.3
+  destructionDelay: 0.2
   groundTag: Ground
 --- !u!114 &3217598690453597505
 MonoBehaviour:

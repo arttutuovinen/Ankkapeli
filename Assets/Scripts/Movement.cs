@@ -34,8 +34,10 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(Vector2.left * RunForce * Time.deltaTime);
+            rb.AddForce(Vector2.left * RunForce * Time.deltaTime);   
         }
+        
+
     }
 
     void JumpProcess()
@@ -67,11 +69,13 @@ public class Movement : MonoBehaviour
             if(spriteRenderer != null)
             {
                 spriteRenderer.flipX = true;
+                
             }
         }
         if (Input.GetKey(KeyCode.D))
         {
             spriteRenderer.flipX = false;
         }
+        
     }  
 }

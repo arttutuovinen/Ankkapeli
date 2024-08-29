@@ -5,23 +5,16 @@ using UnityEngine;
 public class BulletSpeed : MonoBehaviour
 {
 
-    public float speed;
+    
     public Rigidbody2D rb;
     public float destructionDelay = 2f; // Delay in seconds before the object is destroyed
-
+    public float bulletSpeed = 50f;
 
     void Start()
     {
-        rb.velocity = transform.right * speed;
-
+        rb.velocity = transform.right * bulletSpeed;
         // Destroy this game object after the specified delay
         Destroy(gameObject, destructionDelay);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     // Tag used to identify the ground
