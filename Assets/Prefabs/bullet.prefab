@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6380908577418700725}
   - component: {fileID: 5699990661815898540}
   - component: {fileID: 6010035963566976216}
-  - component: {fileID: 1091263646295323299}
+  - component: {fileID: 3217598690453597505}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -180,7 +180,7 @@ MonoBehaviour:
   rb: {fileID: 5699990661815898540}
   destructionDelay: 0.3
   groundTag: Ground
---- !u!114 &1091263646295323299
+--- !u!114 &3217598690453597505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,6 +189,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 311092656302786941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 456fc51155dd77646985c781c0de6b39, type: 3}
+  m_Script: {fileID: 11500000, guid: 39b25df04e5dafd479935b2e646be8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPointPlayer1: {fileID: 0}
+  spawnPointPlayer2: {fileID: 0}
