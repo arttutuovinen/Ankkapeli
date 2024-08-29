@@ -9,7 +9,7 @@ public class BulletSpeed : MonoBehaviour
     public Rigidbody2D rb;
     public float destructionDelay = 2f; // Delay in seconds before the object is destroyed
     public float bulletSpeed = 50f;
-
+  
     void Start()
     {
         rb.velocity = transform.right * bulletSpeed;
@@ -30,4 +30,6 @@ public class BulletSpeed : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+ 
 }
