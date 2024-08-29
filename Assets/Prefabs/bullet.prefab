@@ -129,8 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5699990661815898540}
   destructionDelay: 0.2
-  bulletSpeed: 50
-  groundTag: Ground
+  bulletSpeed: 41
 --- !u!114 &3217598690453597505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +162,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295

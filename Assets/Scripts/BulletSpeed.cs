@@ -7,7 +7,8 @@ public class BulletSpeed : MonoBehaviour
     public Rigidbody2D rb;
     public float destructionDelay = 2f; // Delay in seconds before the object is destroyed
     public float bulletSpeed = 50f;
-  
+    
+
     void Start()
     {
         rb.velocity = transform.right * bulletSpeed;
@@ -15,18 +16,16 @@ public class BulletSpeed : MonoBehaviour
         Destroy(gameObject, destructionDelay);
     }
 
-    // Tag used to identify the ground
-    public string groundTag = "Ground";
+    
 
     // Method called when this object collides with another collider
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the object collided with has the ground tag
-        if (collision.gameObject.CompareTag(groundTag))
-        {
+        
+        
             // Destroy this game object
             Destroy(gameObject);
-        }
+        
     }
 
  
