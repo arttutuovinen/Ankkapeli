@@ -188,9 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed792ddbf134cf54f9b23f44886ed13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  shootCooldown: 1
+  shootingPoint: {fileID: 6285828231527253539}
+  bulletPrefab: {fileID: 311092656302786941, guid: d18c4eecf88043947bb524201e48c5d7, type: 3}
+  shootCooldown: 0.5
 --- !u!114 &7582863145894004484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   spawnPointPlayer1: {fileID: 0}
   spawnPointPlayer2: {fileID: 0}
   Player1: {fileID: 0}
-  Player2: {fileID: 0}
+  Player2: {fileID: 2666809385899263153}
 --- !u!1 &6224009857878363048
 GameObject:
   m_ObjectHideFlags: 0

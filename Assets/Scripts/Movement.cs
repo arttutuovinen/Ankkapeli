@@ -1,29 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Callbacks;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
 
     [SerializeField] float RunForce = 0f;
     [SerializeField] Vector2 JumpForce;
     bool IsGrounded;
-
+    bool FacingRight = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         RunProcess();
         JumpProcess();
-        Flip();
+        FlipRotation();
     }
 
     void RunProcess()
@@ -62,20 +61,31 @@ public class Movement : MonoBehaviour
             IsGrounded = false;
         }
     } 
-    void Flip()
+    void FlipRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            if(spriteRenderer != null)
+            if (FacingRight == true)
             {
-                spriteRenderer.flipX = true;
-                
+                gameObject.transform.Rotate(0, 180, 0);
+                FacingRight = false;
             }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            spriteRenderer.flipX = false;
+            if (FacingRight == false)
+            {
+                gameObject.transform.Rotate(0, -180, 0);
+                FacingRight = true;
+            }
         }
-        
+        else if (Input.GetKey(KeyCode.A))
+        {
+            if (FacingRight == true)
+            {
+                gameObject.transform.Rotate(0, 180, 0);
+                FacingRight = false;
+            }
+        }
     }  
 }

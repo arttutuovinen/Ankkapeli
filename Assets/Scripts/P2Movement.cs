@@ -6,24 +6,23 @@ public class P2Movement : MonoBehaviour
 {
 
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
 
     [SerializeField] float RunForce = 0f;
     [SerializeField] Vector2 JumpForce;
     bool IsGrounded;
+    bool FacingRight = false;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         RunProcess();
         JumpProcess();
-        Flip();
+        FlipRotation();
     }
 
     void RunProcess()
@@ -60,18 +59,23 @@ public class P2Movement : MonoBehaviour
             IsGrounded = false;
         }
     } 
-    void Flip()
+    void FlipRotation()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            if(spriteRenderer != null)
+            if (FacingRight == true)
             {
-                spriteRenderer.flipX = true;
+                gameObject.transform.Rotate(0, 180, 0);
+                FacingRight = false;
             }
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
-            spriteRenderer.flipX = false;
+            if (FacingRight == false)
+            {
+                gameObject.transform.Rotate(0, -180, 0);
+                FacingRight = true;
+            }
         }
     }  
 }
