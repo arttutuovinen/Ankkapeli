@@ -33,7 +33,7 @@ ampuminen:
 	-ampumisen origin point on liikuteltavissa
 
 ------
-winning/losing state:
+Respawning state:
 	-kun toinen pelaaja kuolee, molemmat pelaajat resetoituu takaisin omalle aloituspisteelle
 		-kun panos osuu toisen pelaajan collideriin -> scene resets
 
@@ -48,6 +48,21 @@ PLATFORM:
 2-pelaaja ohjaukset:
 	-keyboard ja (playstation controller support NICE TO HAPPEN)
 ------------------------------------
-PISTEYTYS SYSTEEMI: (NICE TO HAVE)
+PISTEYTYS SYSTEEMI:
 	-kun pelaaja kuolee 
+
+------------------------------------------------
+PRIORITY LISTA:
+
+
+
+HEIKKI:
+1. platform art
+2. juoksu-animaatio
+
+ARTTU:
+1. pisteytys systeemi
+2. tausta art
+3. Peliohjain-porttaus
+
 	
