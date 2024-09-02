@@ -16,7 +16,7 @@ public class DeathRespawner : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             // Respawn both players to their specific spawn points
-            RespawnPlayers();
+            RespawnPlayers();  
         }
     }
 

@@ -21,11 +21,19 @@ public class BulletSpeed : MonoBehaviour
     // Method called when this object collides with another collider
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        
+        if (collision.gameObject.CompareTag("Player2"))
+        {
             // Destroy this game object
             Destroy(gameObject);
-        
+            ScoreManager.instance.AddPointP1();
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Destroy this game object
+            Destroy(gameObject);
+            ScoreManager.instance.AddPointP2();
+        }
     }
 
  
