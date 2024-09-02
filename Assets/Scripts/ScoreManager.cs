@@ -6,6 +6,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Makes this code possible to be referenced
     public static ScoreManager instance;
 
     public TMP_Text player1Score;
@@ -14,6 +15,7 @@ public class ScoreManager : MonoBehaviour
     int scoreP1 = 0;
     int scoreP2 = 0;
 
+    //Makes this code possible to be referenced
     private void Awake()
     {
         instance = this;
