@@ -79,13 +79,5 @@ public class Movement : MonoBehaviour
                 FacingRight = true;
             }
         }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            if (FacingRight == true)
-            {
-                gameObject.transform.Rotate(0, 180, 0);
-                FacingRight = false;
-            }
-        }
     }  
 }
