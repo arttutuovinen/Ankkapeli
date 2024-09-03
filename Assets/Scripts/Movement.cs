@@ -79,5 +79,6 @@ public class Movement : MonoBehaviour
                 FacingRight = true;
             }
         }
-    }  
-}
+    }
+}  
+
