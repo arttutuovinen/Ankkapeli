@@ -17,6 +17,15 @@ public class Respawn : MonoBehaviour
         {
             // Respawn both players to their specific spawn points
             RespawnPlayers();
+            if(collision.gameObject.CompareTag("Player"))
+            {
+                ScoreManager.instance.AddPointP2();
+            }
+
+            if (collision.gameObject.CompareTag("Player2"))
+            {
+                ScoreManager.instance.AddPointP1();
+            }
         }
     }
 

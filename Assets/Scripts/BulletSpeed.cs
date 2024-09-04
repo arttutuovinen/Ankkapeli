@@ -34,6 +34,11 @@ public class BulletSpeed : MonoBehaviour
             Destroy(gameObject);
             ScoreManager.instance.AddPointP2();
         }
+
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
  
