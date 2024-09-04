@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6443356238285844385}
   - component: {fileID: 8495875388006306020}
   - component: {fileID: 7582863145894004484}
+  - component: {fileID: 4649537589769450423}
+  - component: {fileID: 7614984387454877717}
   m_Layer: 6
   m_Name: Player2withShooting
   m_TagString: Player2
@@ -207,6 +209,41 @@ MonoBehaviour:
   spawnPointPlayer2: {fileID: 0}
   Player1: {fileID: 0}
   Player2: {fileID: 2666809385899263153}
+--- !u!114 &4649537589769450423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666809385899263153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abc22f967c5fe04d9684cf3043e6a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  runAnim: 0
+--- !u!95 &7614984387454877717
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666809385899263153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49b5e3c561ea2f544800fa1eb7d57907, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6224009857878363048
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationController : MonoBehaviour
+public class P2AnimationController : MonoBehaviour
 {
     public Animator animator;
     [SerializeField] bool runAnim;
@@ -21,7 +21,7 @@ public class AnimationController : MonoBehaviour
 
     void RunningRight()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             runAnim = true;
         }
@@ -32,7 +32,7 @@ public class AnimationController : MonoBehaviour
     }
     void RunningLeft()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             runAnim = true;
         }
