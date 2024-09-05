@@ -5,7 +5,7 @@ using UnityEngine;
 public class P2AnimationController : MonoBehaviour
 {
     public Animator animator;
-    [SerializeField] bool runAnim;
+    bool runAnim;
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
