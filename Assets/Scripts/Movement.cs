@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] Vector2 JumpForce;
     bool IsGrounded;
     bool FacingRight = true;
+
 
     void Start()
     {
@@ -31,8 +33,6 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(RunForce * Time.deltaTime * Vector2.left);   
         }
-        
-
     }
 
     void JumpProcess()
