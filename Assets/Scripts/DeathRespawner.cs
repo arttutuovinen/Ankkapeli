@@ -7,10 +7,6 @@ public class DeathRespawner : MonoBehaviour
     public Transform spawnPointPlayer1;
     public Transform spawnPointPlayer2;
 
-    Rigidbody rigidbody;
-    Transform transform;
-    
-
     public GameObject Player1;
     public GameObject Player2;
 

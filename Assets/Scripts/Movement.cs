@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Callbacks;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -29,11 +25,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(Vector2.right * RunForce * Time.deltaTime);
+            rb.AddForce(RunForce * Time.deltaTime * Vector2.right);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(Vector2.left * RunForce * Time.deltaTime);   
+            rb.AddForce(RunForce * Time.deltaTime * Vector2.left);   
         }
         
 
