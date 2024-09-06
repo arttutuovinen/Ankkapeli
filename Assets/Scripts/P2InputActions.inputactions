@@ -1,14 +1,14 @@
 {
-    "name": "P1InputActions",
+    "name": "P2InputActions",
     "maps": [
         {
-            "name": "P1Controls",
-            "id": "603a3400-a63e-4865-8c3e-014e931639a2",
+            "name": "P2Controls",
+            "id": "589f5bde-dc1c-4e57-acaf-aedac571a060",
             "actions": [
                 {
                     "name": "Shoot",
                     "type": "Button",
-                    "id": "6ac08588-f22e-4347-8d62-aef497e53f70",
+                    "id": "03de9450-c1a6-478c-924a-e312d06f2928",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -16,17 +16,17 @@
                 },
                 {
                     "name": "Jump",
-                    "type": "Value",
-                    "id": "c09e7f5a-5537-4261-bab0-15c187eb1fa9",
+                    "type": "Button",
+                    "id": "26e75668-2015-4773-aee6-60fd322ec91a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "30b9754d-5ff6-47ab-96d0-66f06d0e7acc",
+                    "id": "ac37a050-bcdd-4bcb-a86e-c05753463732",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -36,8 +36,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "0f35123f-718a-446e-b308-5b7de07c7dd2",
-                    "path": "<Keyboard>/f",
+                    "id": "f6fa9990-deb3-46ca-872c-2cbd933232b9",
+                    "path": "<Keyboard>/rightCtrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -47,19 +47,8 @@
                 },
                 {
                     "name": "",
-                    "id": "a55bb29e-5d0e-4275-a3a0-3ccf9f43b504",
-                    "path": "<DualShockGamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d4e8ebb1-281a-485d-8404-f03fbc9fc5d5",
-                    "path": "<Keyboard>/w",
+                    "id": "0b7c644d-5ec0-43c1-bcc2-edef6b147f0e",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -69,7 +58,7 @@
                 },
                 {
                     "name": "",
-                    "id": "0d3f576e-0a84-4d85-b2e2-170f1c1f718d",
+                    "id": "62fd0f3b-fbba-4929-8141-a70032f35e8c",
                     "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
@@ -79,8 +68,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
-                    "id": "d6793e8b-2eab-4e93-a3a0-9acb053f285c",
+                    "name": "Arrows",
+                    "id": "e23ad891-6326-41a9-b983-19a44220bd58",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -91,8 +80,8 @@
                 },
                 {
                     "name": "negative",
-                    "id": "e412c0ca-fb58-43cf-ab00-0586f6beb605",
-                    "path": "<Keyboard>/a",
+                    "id": "2fc52427-e8f0-4a9f-9f43-b69b0a1b0c22",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -102,8 +91,8 @@
                 },
                 {
                     "name": "positive",
-                    "id": "d72b6db3-4f7e-4cae-88f2-cf4136ddbd72",
-                    "path": "<Keyboard>/d",
+                    "id": "6ec596ea-a0ba-4e21-b085-7d7a1e08c283",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -112,8 +101,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis Gamepad",
-                    "id": "689659eb-cc5c-42d4-8a14-f1b883434c17",
+                    "name": "D-Pad",
+                    "id": "fa330b59-1993-415f-8fd6-72dd698c0c45",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -124,7 +113,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "4cd249ed-85c9-4cec-b3d5-8cf1b7a0fa67",
+                    "id": "d5dfd13e-3ba6-40e9-af5f-94d882d0818c",
                     "path": "<DualShockGamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
@@ -135,7 +124,7 @@
                 },
                 {
                     "name": "positive",
-                    "id": "18938354-db09-4a5c-b2ca-0d53188bbe33",
+                    "id": "52edf5d0-fd02-4a4a-b4f8-0acfa2d7d62e",
                     "path": "<DualShockGamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
@@ -143,6 +132,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fdea233a-1eb1-41d6-a7bd-beca9d71ba05",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -151,13 +151,7 @@
         {
             "name": "Keyboard",
             "bindingGroup": "Keyboard",
-            "devices": [
-                {
-                    "devicePath": "<Keyboard>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
+            "devices": []
         },
         {
             "name": "Gamepad",

@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6594180221190482506}
   - component: {fileID: 4525267015179857483}
   - component: {fileID: 1984075825037710898}
+  - component: {fileID: 9051617660129439972}
   - component: {fileID: 4582138521759372090}
   - component: {fileID: 7583278746034416073}
   - component: {fileID: 345296840696879997}
@@ -220,7 +221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunForce: 18285
   JumpForce: {x: 0, y: 140}
-  jumpSpeed: 5
 --- !u!61 &3605422952654976739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -280,7 +280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 4402112099174630349}
   bulletPrefab: {fileID: 311092656302786941, guid: d18c4eecf88043947bb524201e48c5d7, type: 3}
-  shootCooldown: 0.5
 --- !u!114 &4525267015179857483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +317,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4582138521759372090
+--- !u!114 &9051617660129439972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,6 +325,19 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6578308445405182372}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e8948f8a01a7245847f35db251fe92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1984075825037710898}
+--- !u!114 &4582138521759372090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578308445405182372}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 087c49fa59287ba43936c5e178bf2b9d, type: 3}
   m_Name: 
@@ -343,7 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914175290cdb1c343a0a72f46332187c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulsePower: {x: 0, y: 0}
 --- !u!114 &345296840696879997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914175290cdb1c343a0a72f46332187c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulsePower: {x: 0, y: 0}
 --- !u!114 &2903164133633516479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +393,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: P1Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

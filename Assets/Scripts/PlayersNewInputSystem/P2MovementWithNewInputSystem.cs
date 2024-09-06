@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MovementWithNewInputSystem : MonoBehaviour
+public class P2MovementWithNewInputSystem : MonoBehaviour
 {
     Rigidbody2D rb;
 
@@ -14,22 +14,24 @@ public class MovementWithNewInputSystem : MonoBehaviour
 
     //New Input System stuff
     float move;
-    private P1InputActions p1inputactions;
-   
+    private P2InputActions p2inputactions;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        p1inputactions = GetComponent<P1InputActions>();
+        p2inputactions = GetComponent<P2InputActions>();
     }
+
+
 
     void Update()
     {
         //tells that player moves 
         rb.AddForce(RunForce * Time.deltaTime * new Vector2(move, 0));
-        
+
         FlipRotation();
     }
-    
+
 
     private void OnMovement(InputValue moveValue)
     {
