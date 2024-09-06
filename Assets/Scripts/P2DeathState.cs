@@ -6,11 +6,9 @@ public class P2DeathState : MonoBehaviour
 {
     Rigidbody2D rigidBody;
     [SerializeField] Vector2 impulsePower;
-    bool impulseRight;
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        impulseRight = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,13 +18,11 @@ public class P2DeathState : MonoBehaviour
             Invoke ("Restore", 2.0f);
             if (gameObject.transform.rotation.eulerAngles.y == 180)
             {
-                impulseRight = true;
                 impulsePower = new Vector2(30.0f, 0.0f);
                 rigidBody.AddForce(impulsePower, ForceMode2D.Impulse);
             }
             if (gameObject.transform.rotation.eulerAngles.y == 0)
             {
-                impulseRight = false;
                 impulsePower = new Vector2(-30.0f, 0.0f);
                 rigidBody.AddForce(impulsePower, ForceMode2D.Impulse);
             }
