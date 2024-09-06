@@ -5,7 +5,6 @@ using Vector2 = UnityEngine.Vector2;
 public class DeathState : MonoBehaviour
 {
     Rigidbody2D rigidBody;
-    [SerializeField] Vector2 impulsePower;
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -16,16 +15,6 @@ public class DeathState : MonoBehaviour
         {
             Deathstate();
             Invoke ("Restore", 2.0f);
-            if (gameObject.transform.rotation.eulerAngles.y == 180)
-            {
-                impulsePower = new Vector2(30.0f, 0.0f);
-                rigidBody.AddForce(impulsePower, ForceMode2D.Impulse);
-            }
-            if (gameObject.transform.rotation.eulerAngles.y == 0)
-            {
-                impulsePower = new Vector2(-30.0f, 0.0f);
-                rigidBody.AddForce(impulsePower, ForceMode2D.Impulse);
-            }
         }
     }
     void Deathstate()
