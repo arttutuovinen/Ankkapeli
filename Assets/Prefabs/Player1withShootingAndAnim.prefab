@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7089910150317072114}
   - component: {fileID: 3340910290114208262}
   - component: {fileID: 6843747485601488048}
+  - component: {fileID: 8543674758181444302}
   m_Layer: 6
   m_Name: Player1withShootingAndAnim
   m_TagString: Player
@@ -298,6 +299,19 @@ MonoBehaviour:
   m_DefaultActionMap: P1Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &8543674758181444302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209664112475813208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914175290cdb1c343a0a72f46332187c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impulsePower: {x: 0, y: 0}
 --- !u!1 &9064778429940837617
 GameObject:
   m_ObjectHideFlags: 0

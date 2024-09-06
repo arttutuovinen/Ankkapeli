@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 1165421009388966976}
   - component: {fileID: 4555994871183598912}
   - component: {fileID: 2664075061686466796}
+  - component: {fileID: 2056684282348263012}
   m_Layer: 6
   m_Name: Player2withShootingAndAnim
   m_TagString: Player2
@@ -306,7 +307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2664075061686466796}
-  runAnim: 0
 --- !u!95 &2664075061686466796
 Animator:
   serializedVersion: 5
@@ -328,3 +328,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2056684282348263012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7003236113661942443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fd0508eb4daaa4ba00458bd2986ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impulsePower: {x: 0, y: 0}

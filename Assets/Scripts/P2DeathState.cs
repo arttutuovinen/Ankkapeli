@@ -2,7 +2,7 @@ using System.Numerics;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 
-public class DeathState : MonoBehaviour
+public class P2DeathState : MonoBehaviour
 {
     Rigidbody2D rigidBody;
     [SerializeField] Vector2 impulsePower;
@@ -35,15 +35,15 @@ public class DeathState : MonoBehaviour
     void Deathstate()
     {
         rigidBody.freezeRotation = false;
-        gameObject.GetComponent<Shooting>().enabled = false;
+        gameObject.GetComponent<P2Shooting>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        gameObject.GetComponent<Movement>().enabled = false;
+        gameObject.GetComponent<P2Movement>().enabled = false;
     }
     void Restore()
     {
         rigidBody.freezeRotation = true;
-        gameObject.GetComponent<Shooting>().enabled = true;
+        gameObject.GetComponent<P2Shooting>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
-        gameObject.GetComponent<Movement>().enabled = true;
+        gameObject.GetComponent<P2Movement>().enabled = true;
     }
 }
