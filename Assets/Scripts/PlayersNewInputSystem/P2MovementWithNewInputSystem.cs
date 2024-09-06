@@ -20,6 +20,7 @@ public class P2MovementWithNewInputSystem : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         p2inputactions = GetComponent<P2InputActions>();
+
     }
 
 
