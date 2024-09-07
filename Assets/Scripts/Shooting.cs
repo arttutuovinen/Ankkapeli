@@ -11,8 +11,8 @@ public class Shooting : MonoBehaviour
     private P1InputActions p1inputactions;
 
     //Shooting Cooldown
-   // public float shootCooldown = 1f; // Cooldown time in seconds between shots
-    //private float lastShootTime = 0f; // Time when the last shot was fired
+    public float shootCooldown = 1f; // Cooldown time in seconds between shots
+    private float lastShootTime = 0f; // Time when the last shot was fired
 
     void Start()
     {
@@ -22,15 +22,16 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         // Check if enough time has passed since the last shot
-       // if (Time.time >= lastShootTime + shootCooldown)
-        
-            
-        
-               // lastShootTime = Time.time;
-            
-        
+        if (Time.time >= lastShootTime + shootCooldown)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Shoot();
+                lastShootTime = Time.time;
+            }
+        }
     }
-    private void OnShoot()
+    private void Shoot()
     {
        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
     }
