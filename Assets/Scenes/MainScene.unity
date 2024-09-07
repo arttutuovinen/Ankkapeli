@@ -460,6 +460,14 @@ PrefabInstance:
       propertyPath: spawnPointPlayer2
       value: 
       objectReference: {fileID: 336602623}
+    - target: {fileID: 6574006528027944847, guid: 866a680832359d644be49ffa4776a04a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574006528027944847, guid: 866a680832359d644be49ffa4776a04a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1861526465
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
