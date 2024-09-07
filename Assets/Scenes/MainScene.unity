@@ -404,6 +404,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1withShootingAndAnim
       objectReference: {fileID: 0}
+    - target: {fileID: 1595285506595991687, guid: 866a680832359d644be49ffa4776a04a, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595285506595991687, guid: 866a680832359d644be49ffa4776a04a, type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595285506595991687, guid: 866a680832359d644be49ffa4776a04a, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1627053055843372219, guid: 866a680832359d644be49ffa4776a04a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6
@@ -1306,6 +1318,18 @@ PrefabInstance:
     - target: {fileID: 1744154484292477056, guid: 9fa5edcf23a5bc2408e1c4245454ea8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698596784768448805, guid: 9fa5edcf23a5bc2408e1c4245454ea8e, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698596784768448805, guid: 9fa5edcf23a5bc2408e1c4245454ea8e, type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698596784768448805, guid: 9fa5edcf23a5bc2408e1c4245454ea8e, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7003236113661942443, guid: 9fa5edcf23a5bc2408e1c4245454ea8e, type: 3}
       propertyPath: m_Name
