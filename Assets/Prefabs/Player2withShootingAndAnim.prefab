@@ -378,6 +378,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 3535628346050418409}
   bulletPrefab: {fileID: 311092656302786941, guid: d18c4eecf88043947bb524201e48c5d7, type: 3}
   shootCooldown: 0.5
+  muzzleFlashPrefab: {fileID: 8621091104471962407, guid: cb62d7622b93d44449e266b0bbcb0bc5, type: 3}
 --- !u!114 &1165421009388966976
 MonoBehaviour:
   m_ObjectHideFlags: 0

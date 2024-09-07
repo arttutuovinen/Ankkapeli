@@ -14,6 +14,8 @@ public class Shooting : MonoBehaviour
     public float shootCooldown = 1f; // Cooldown time in seconds between shots
     private float lastShootTime = 0f; // Time when the last shot was fired
 
+    public Transform muzzleFlashPrefab;
+
     void Start()
     {
         p1inputactions = new P1InputActions();
@@ -28,12 +30,15 @@ public class Shooting : MonoBehaviour
             {
                 Shoot();
                 lastShootTime = Time.time;
+                
             }
         }
     }
     private void Shoot()
     {
        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+       Instantiate(muzzleFlashPrefab, shootingPoint.position, transform.rotation);
+
     }
 
     
